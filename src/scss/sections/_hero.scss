@@ -1,0 +1,119 @@
+.hero {
+	&__body {
+	}
+
+	&__slider {
+	}
+}
+.hero-slider {
+	&__slide {
+	}
+
+	.slick-dots {
+		display: flex;
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+		position: absolute;
+		bottom: 45px;
+		left: 50%;
+		transform: translateX(-50%);
+
+		li {
+			&:not(:last-child) {
+				margin-right: 11px;
+			}
+
+			button {
+				border: none;
+				border-radius: 50%;
+				background: rgba(255, 255, 255, 0.3);
+				width: 30px;
+				height: 30px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: rem(11);
+				color: #243f4d;
+				font-weight: 500;
+				transition: all 0.3s;
+			}
+
+			&:hover {
+				button {
+					background: #fff;
+				}
+			}
+		}
+
+		.slick-active {
+			button {
+				background: #fff;
+			}
+		}
+	}
+}
+.hero-slide {
+	&__wrapper {
+		background: $bg-color;
+		padding: 100px 15px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__content {
+		flex: 0 1 420px;
+		&:not(:last-child) {
+			margin-right: 7.1%;
+		}
+	}
+
+	&__title {
+		color: #243f4d;
+		text-transform: uppercase;
+		font-size: rem(72);
+		line-height: 0.97;
+		font-weight: 500;
+
+		&:not(:last-child) {
+			margin-bottom: 45px;
+		}
+	}
+
+	&__text {
+		max-width: 345px;
+
+		&:not(:last-child) {
+			margin-bottom: 40px;
+		}
+	}
+
+	&__link {
+		padding: 25px;
+		font-family: "Rubik", sans-serif;
+		font-size: rem(15);
+		font-weight: 500;
+		display: inline-flex;
+		align-items: center;
+
+		span {
+			&:not(:last-child) {
+				margin-right: 60px;
+			}
+		}
+
+		svg path {
+			transition: all 0.3s;
+		}
+
+		&:hover {
+			svg path {
+				fill: $bd-color;
+			}
+		}
+	}
+
+	&__image {
+		flex: 0 1 755px;
+	}
+}

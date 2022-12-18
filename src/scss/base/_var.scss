@@ -1,0 +1,60 @@
+// COLORS
+$main-color: #243f4d;
+$white-color: #fff;
+$title-color: #436372;
+$hover-color: #fe3e57;
+$bg-color: #fcd7b6;
+$banner-color: #ececec;
+$bd-color: #436372;
+
+// CONTAINER WIDTH
+$container-width: 1170px;
+
+// MEDIA MIXIN
+@mixin mediaMaxW($max-width) {
+	@media (max-width: $max-width) {
+		@content;
+	}
+}
+@mixin max1000px {
+	@media (max-width: 1000px) {
+		@content;
+	}
+}
+@mixin max768px {
+	@media (max-width: 768px) {
+		@content;
+	}
+}
+@mixin max480px {
+	@media (max-width: 480px) {
+		@content;
+	}
+}
+
+// PERCENTAGE LINE-HEIGHT
+@function autolh($line-height, $font-size) {
+	@return calc($line-height / $font-size * 100%);
+}
+
+// FONT-FACE MIXIN
+@mixin font-face($font-family, $file-path, $weight: 400, $style: normal) {
+	@font-face {
+		font-family: $font-family;
+		font-weight: $weight;
+		font-style: $style;
+		font-display: swap;
+		src: url("#{$file-path}.eot");
+		src: url("#{$file-path}.eot?#iefix") format("embedded-opentype"), url("#{$file-path}.woff") format("woff"),
+			url("#{$file-path}.ttf") format("truetype");
+	}
+}
+
+// FROM PX TO REM
+@function rem($px) {
+	@return calc($px / 16) + rem;
+}
+// FROM PX TO REM
+@function em($px) {
+	@return calc($px / 16) + em;
+}

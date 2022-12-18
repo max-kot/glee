@@ -1,0 +1,129 @@
+.header {
+	padding: 48px 0;
+
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		& > *:not(:last-child) {
+			margin-right: 15px;
+		}
+	}
+
+	&__logo {
+	}
+
+	&__menu {
+	}
+
+	&__navbar {
+	}
+}
+.logo {
+	display: flex;
+	align-items: center;
+
+	img {
+		&:not(:last-child) {
+			margin-right: 12px;
+		}
+	}
+
+	&__text {
+		font-family: "Rubik", sans-serif;
+		font-size: rem(36);
+		font-weight: 500;
+		color: $title-color;
+	}
+}
+.menu {
+	&__list {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		&:not(:last-child) {
+			margin-right: 20px;
+		}
+	}
+
+	&__link {
+		font-size: rem(15);
+		font-weight: 500;
+		color: $title-color;
+	}
+}
+.navbar {
+	display: flex;
+	flex-wrap: wrap;
+	&__search-btn {
+		width: 51px;
+		height: 51px;
+		border-radius: 50%;
+		background: rgba(163, 187, 200, 0.2);
+		padding: 17px;
+
+		&:not(:last-child) {
+			margin-right: 20px;
+		}
+	}
+
+	&__btn-box {
+		display: flex;
+		flex-wrap: wrap;
+		border-radius: 25px;
+		background: $bg-color;
+		padding: 15px 40px 10px;
+
+		&:not(:last-child) {
+			margin-right: 20px;
+		}
+	}
+
+	&__btn {
+		width: 19px;
+		position: relative;
+		&:not(:last-child) {
+			margin-right: 58px;
+
+			&::after {
+				content: "";
+				position: absolute;
+				width: 1px;
+				height: 32px;
+				background: rgba(255, 255, 255, 0.4);
+				right: -30px;
+				bottom: 0;
+			}
+		}
+	}
+
+	&__btn-counter {
+		position: absolute;
+		top: -4px;
+		right: -8px;
+		width: 16px;
+		height: 16px;
+		background: #fff;
+		border-radius: 50%;
+		font-family: "DMSans", sans-serif;
+		color: $title-color;
+		font-size: rem(10);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__btn-add {
+		background: #a3bbc8;
+		width: 51px;
+		height: 51px;
+		border-radius: 50%;
+		padding: 15px;
+	}
+}

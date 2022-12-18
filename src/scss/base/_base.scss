@@ -1,0 +1,133 @@
+html,
+body {
+	scroll-behavior: smooth;
+	height: 100%;
+}
+body {
+	font-family: "Rubik", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1rem;
+	line-height: 188%;
+	color: $main-color;
+	background: $white-color;
+}
+
+/*--- Utility ---*/
+.none {
+	display: none !important;
+}
+
+.visually-hidden {
+	// делает элемент скрытым, но он по-прежнему на странице
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+	width: 0px;
+	height: 0px;
+	display: block;
+	margin-left: -10000px;
+	background: transparent;
+	font-size: 0;
+}
+.hidden {
+	opacity: 0;
+}
+
+.no-scroll {
+	overflow: hidden;
+}
+/*--- Grid ---*/
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+.main {
+	flex: 1 1 auto;
+}
+.container {
+	max-width: $container-width + 30px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.container--wide {
+	max-width: 1770px + 30px;
+}
+
+.big-container {
+	max-width: calc(1699px + 30px);
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+/*--- Elements ---*/
+
+.btn {
+	font-family: "DMSans", sans-serif;
+	background-color: #a3bbc8;
+	padding: 16px;
+	color: #fff;
+	transition: all 0.3s;
+	border: 1px solid transparent;
+	&:hover {
+		border-color: $bd-color;
+		background: transparent;
+		color: $bd-color;
+	}
+}
+.btn--border {
+	border-color: $hover-color;
+	color: $title-color;
+	background: $white-color;
+	box-shadow: unset;
+	&:hover {
+		background: $hover-color;
+		color: $white-color;
+	}
+}
+
+.title-small {
+	font-family: "Roboto", sans-serif;
+	font-size: rem(22);
+	font-weight: 500;
+	line-height: 164%;
+	color: $title-color;
+}
+.title {
+	font-family: "Roboto", sans-serif;
+	font-size: rem(48);
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	color: $title-color;
+	line-height: 1;
+	@include max768px {
+		font-size: rem(32);
+	}
+}
+.title--regular {
+	font-weight: 400;
+}
+.title--blue {
+	text-transform: none;
+	color: #28384f;
+}
+
+.subtitle {
+	font-size: rem(22);
+	color: $hover-color;
+	text-transform: uppercase;
+}
+.--ibg {
+	position: relative;
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
