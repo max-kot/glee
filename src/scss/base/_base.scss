@@ -43,6 +43,9 @@ body {
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
+	@media (max-width: 1024px) {
+		padding-bottom: 71px;
+	}
 }
 .main {
 	flex: 1 1 auto;
