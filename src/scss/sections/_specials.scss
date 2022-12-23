@@ -47,7 +47,8 @@
 		}
 	}
 
-	&__image {
+	&__image,
+	.specials__image picture {
 		margin-top: -200px;
 		flex: 0 1 233px;
 
