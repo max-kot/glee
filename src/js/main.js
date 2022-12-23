@@ -10,6 +10,10 @@ import './modules/_burger-menu.js';
 // Mixitup-menu
 import './modules/_mixitup.js';
 
+// Category filter
+
+import './modules/_category-filter.js';
+
 // Range-slider
 //import './modules/_range-slider.js';
 
