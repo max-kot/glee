@@ -68,6 +68,8 @@ body {
 /*--- Elements ---*/
 
 .btn {
+	display: inline-flex;
+	align-items: center;
 	font-family: "DMSans", sans-serif;
 	background-color: #a3bbc8;
 	padding: 16px;
@@ -81,13 +83,26 @@ body {
 	}
 }
 .btn--border {
-	border-color: $hover-color;
-	color: $title-color;
-	background: $white-color;
-	box-shadow: unset;
+	border-color: $bd-color;
+	color: $bd-color;
+	background: transparent;
+
+	& > *:not(:last-child) {
+		margin-right: 44px;
+	}
+
+	svg path {
+		transition: all 0.3s;
+		fill: $bd-color;
+	}
+
 	&:hover {
-		background: $hover-color;
-		color: $white-color;
+		background: $bd-color;
+		color: #fff;
+
+		svg path {
+			fill: #fff;
+		}
 	}
 }
 
