@@ -788,6 +788,7 @@ body {
 @media (max-width: 768px) {
   .product-block__tag-list:not(:last-child) {
     margin-bottom: 30px;
+    justify-content: flex-start;
   }
 }
 .product-block__tag-item {
