@@ -1,5 +1,6 @@
 @import "../../node_modules/normalize.css/normalize.css";
 @import "../../node_modules/slick-carousel/slick/slick.css";
+@import "../../node_modules/@fancyapps/ui/dist/fancybox.css";
 @font-face {
   font-family: "Rubik";
   font-weight: 400;
@@ -1168,6 +1169,93 @@ body {
   font-family: "DMSans", sans-serif;
   font-weight: 700;
   color: #a3bbc8;
+}
+
+.video-block {
+  position: relative;
+}
+.video-block__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.video-block__image img,
+.video-block__image picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.video-block__body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 186px 0;
+}
+@media (max-width: 768px) {
+  .video-block__body {
+    padding: 100px 0;
+  }
+}
+.video-block__btn {
+  width: 98px;
+  height: 98px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #a3bbc8;
+  border-radius: 50%;
+  position: relative;
+  transition: all 0.3s;
+}
+@media (max-width: 768px) {
+  .video-block__btn {
+    width: 80px;
+    height: 80px;
+  }
+}
+.video-block__btn svg path {
+  transition: all 0.3s;
+}
+.video-block__btn:hover {
+  background: #f1f1f1;
+}
+.video-block__btn:hover svg path {
+  fill: #a3bbc8;
+}
+.video-block__btn::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #a3bbc8;
+  width: 127px;
+  height: 127px;
+  border-radius: 50%;
+  opacity: 0.6;
+  animation: glowing1 2500ms infinite;
+}
+
+@keyframes glowing1 {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  50% {
+    height: 127px;
+    width: 127px;
+  }
+  100% {
+    height: 0px;
+    width: 0px;
+  }
 }
 @supports (-webkit-appearance:none){
 
