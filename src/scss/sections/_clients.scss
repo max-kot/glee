@@ -1,0 +1,25 @@
+.clients {
+	background: rgba(252, 215, 182, 0.2);
+	padding: 260px 0 100px;
+
+	@media (max-width: 768px) {
+		padding: 210px 0 50px;
+	}
+	&__body {
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-wrap: wrap;
+		margin: -5px;
+	}
+
+	&__item {
+		margin: 10px 10px;
+	}
+
+	&__link {
+	}
+}
