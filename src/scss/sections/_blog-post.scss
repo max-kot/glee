@@ -1,5 +1,8 @@
 .blog-post {
 	padding-top: 100px;
+	margin-bottom: -160px;
+	position: relative;
+	z-index: 1;
 	@media (max-width: 768px) {
 		padding-top: 50px;
 	}
