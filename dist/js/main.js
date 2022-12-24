@@ -10,6 +10,11 @@ import './modules/_burger-menu.js';
 // Mixitup-menu
 import './modules/_mixitup.js';
 
+// Category filter
+import './modules/_category-filter.js';
+
+// Fancybox
+import './modules/_fancybox.js';
 // Range-slider
 //import './modules/_range-slider.js';
 
@@ -17,8 +22,7 @@ import './modules/_mixitup.js';
 //import './modules/_form-styler.js';
 
 
-// Fancybox
-//import './modules/_fancybox.js';
+
 
 
 // Acordion
