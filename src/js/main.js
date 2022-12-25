@@ -15,6 +15,9 @@ import './modules/_category-filter.js';
 
 // Fancybox
 import './modules/_fancybox.js';
+
+// Acordion
+import './modules/_acordion.js';
 // Range-slider
 //import './modules/_range-slider.js';
 
