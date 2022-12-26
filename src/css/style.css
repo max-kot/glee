@@ -712,6 +712,7 @@ body {
   font-size: 2.25rem;
   font-weight: 300;
   color: #222933;
+  text-align: center;
 }
 .cover__title:not(:last-child) {
   margin-bottom: 10px;
@@ -2125,4 +2126,38 @@ body {
   font-weight: 500;
   font-size: 1.125rem;
   border-width: 2px;
+}
+
+.terms {
+  padding-top: 100px;
+}
+@media (max-width: 768px) {
+  .terms {
+    padding-top: 50px;
+  }
+}
+.terms__box:not(:last-child) {
+  margin-bottom: 75px;
+}
+@media (max-width: 768px) {
+  .terms__box:not(:last-child) {
+    margin-bottom: 35px;
+  }
+}
+.terms__title {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.terms__title:not(:last-child) {
+  margin-bottom: 20px;
+}
+.terms__item {
+  display: flex;
+}
+.terms__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.terms__item::before {
+  content: attr(data-number);
+  margin-right: 15px;
 }

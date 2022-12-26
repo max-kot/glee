@@ -1,0 +1,46 @@
+.terms {
+	padding-top: 100px;
+
+	@media (max-width: 768px) {
+		padding-top: 50px;
+	}
+
+	&__body {
+	}
+
+	&__box {
+		&:not(:last-child) {
+			margin-bottom: 75px;
+			@media (max-width: 768px) {
+				margin-bottom: 35px;
+			}
+		}
+	}
+
+	&__title {
+		font-size: rem(24);
+		font-weight: 500;
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__list {
+	}
+
+	&__item {
+		display: flex;
+
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+
+		&::before {
+			content: attr(data-number);
+			margin-right: 15px;
+		}
+	}
+
+	&__text {
+	}
+}
