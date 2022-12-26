@@ -3,7 +3,7 @@
 
 <head>
 	@@include('./base/head.html', {
-	"title": 'Glee Market | Home'
+	"title": 'Glee Market | Page'
 	})
 </head>
 
@@ -11,12 +11,11 @@
 	<div class="wrapper">
 		@@include('./modules/_header.html')
 		<main class="main">
-			@@include('./modules/_hero.html')
-			@@include('./modules/_features.html')
-			@@include('./modules/_product-block.html')
-			@@include('./modules/_specials.html')
-			@@include('./modules/_category.html')
-			@@include('./modules/_video-block.html')
+			@@include('./modules/_cover.html', {
+			"title": 'Page',
+			"page-link": 'Page',
+			})
+
 			@@include('./modules/_blog-post.html')
 			@@include('./modules/_clients.html')
 		</main>

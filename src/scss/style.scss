@@ -5,14 +5,19 @@
 @import "./base/_reset.scss";
 @import "./base/_base.scss";
 
-// Section
-@import "./sections/_header.scss";
-@import "./sections/_hero.scss";
-@import "./sections/_features.scss";
-@import "./sections/_product-block.scss";
-@import "./sections/_specials.scss";
-@import "./sections/_category.scss";
-@import "./sections/_video-block.scss";
-@import "./sections/_blog-post.scss";
-@import "./sections/_clients.scss";
-@import "./sections/_footer.scss";
+// Modules
+@import "./modules/_header.scss";
+@import "./modules/_hero.scss";
+@import "./modules/_cover.scss";
+@import "./modules/_blog-post.scss";
+@import "./modules/_clients.scss";
+@import "./modules/_footer.scss";
+
+@import "./modules/_features.scss";
+@import "./modules/_product-block.scss";
+@import "./modules/_specials.scss";
+@import "./modules/_category.scss";
+@import "./modules/_video-block.scss";
+@import "./modules/_footer.scss";
+
+@import "./modules/_login.scss";

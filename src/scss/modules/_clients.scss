@@ -5,6 +5,15 @@
 	@media (max-width: 768px) {
 		padding: 210px 0 50px;
 	}
+
+	&--padding {
+		padding: 100px 0;
+
+		@media (max-width: 768px) {
+			padding: 50px 0;
+		}
+	}
+
 	&__body {
 	}
 

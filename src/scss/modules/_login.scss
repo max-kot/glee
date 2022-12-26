@@ -1,0 +1,123 @@
+.login {
+	padding: 100px 0;
+	@media (max-width: 768px) {
+		padding: 50px 0;
+	}
+	&__body {
+		max-width: 470px;
+		margin: 0 auto;
+	}
+
+	&__form {
+	}
+}
+.login-form {
+	&__username {
+		display: flex;
+		flex-direction: column;
+		&:not(:last-child) {
+			margin-bottom: 25px;
+		}
+	}
+
+	&__text {
+		font-size: rem(14);
+		color: #436372;
+
+		&:not(:last-child) {
+			margin-bottom: 5px;
+		}
+	}
+
+	&__input {
+		border: solid 2px #f6f6f6;
+		padding: 15px;
+	}
+
+	&__password {
+		display: flex;
+		flex-direction: column;
+		&:not(:last-child) {
+			margin-bottom: 35px;
+		}
+	}
+
+	&__btn {
+		display: flex;
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+		font-size: rem(18);
+		font-weight: 500;
+		border-width: 2px;
+		&:not(:last-child) {
+			margin-bottom: 35px;
+		}
+	}
+
+	&__asking-box {
+		display: flex;
+		justify-content: space-between;
+		&:not(:last-child) {
+			margin-bottom: 35px;
+		}
+		&* > :not(:last-child) {
+			margin-right: 5px;
+		}
+	}
+
+	&__label {
+		cursor: pointer;
+		span {
+			font-size: rem(14);
+			color: #436372;
+		}
+	}
+
+	&__checkbox {
+		display: none;
+
+		&:checked ~ .login-form__label-icon {
+			background: #ebebeb url("../img/icons/check.png") center/10px 8px no-repeat;
+		}
+	}
+
+	&__label-icon {
+		width: 14px;
+		height: 14px;
+		border-radius: 2.3px;
+		background: #ebebeb;
+		display: inline-block;
+		&:not(:last-child) {
+			margin-right: 15px;
+		}
+	}
+
+	&__label-text {
+		display: inline-block;
+	}
+
+	&__link {
+		font-size: rem(14);
+		color: #436372;
+	}
+
+	&__registration {
+		border-top: 2px solid #f6f6f6;
+		padding-top: 35px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	&__btn-registration {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-weight: 500;
+		font-size: rem(18);
+		border-width: 2px;
+	}
+}
