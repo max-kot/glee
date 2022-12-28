@@ -1,4 +1,4 @@
-
+/*
 const viewButtons = document.querySelectorAll('.filter-view__btn');
 const viewButtonList = document.querySelector('.filter-view__btn-list');
 const viewButtonGrid = document.querySelector('.filter-view__btn-grid');
@@ -27,3 +27,27 @@ function initListMode() {
 if (productList) {
 	initListMode();
 }
+*/
+
+const allViewBtn = document.querySelectorAll('.shop-content__view-btn');
+const btnViewList = document.querySelector('.shop-content__view-btn--list');
+const btnViewGrid = document.querySelector('.shop-content__view-btn--grid');
+const shopList = document.querySelector('.shop-content__product-list');
+
+const removeActiveClassBtn = () => {
+	allViewBtn.forEach((item) => {
+		item.classList.remove('active')
+	})
+}
+
+btnViewList.addEventListener('click', () => {
+	removeActiveClassBtn();
+	btnViewList.classList.add('active');
+	shopList.classList.add('active');
+})
+
+btnViewGrid.addEventListener('click', () => {
+	removeActiveClassBtn();
+	btnViewGrid.classList.add('active');
+	shopList.classList.remove('active');
+})
