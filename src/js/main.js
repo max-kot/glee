@@ -18,8 +18,18 @@ import './modules/_fancybox.js';
 
 // Acordion
 import './modules/_acordion.js';
+
 // Range-slider
-//import './modules/_range-slider.js';
+import './modules/_range-slider.js';
+
+// RateYo
+import './modules/_rateyo.js';
+
+// Shop View Toggles
+import './modules/_shop-views.js';
+
+// Shop filter
+import './modules/_filter-btn.js';
 
 // Styler
 //import './modules/_form-styler.js';

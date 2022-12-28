@@ -1,14 +1,9 @@
-const filterBtn = document.querySelector('.filter-btn-active');
-const filterBlock = document.querySelector('.shop__filter');
-const shopContent = document.querySelector('.shop__content');
+const filterBtn = document.querySelector('.shop__btn-aside');
+const filterSection = document.querySelector('.shop__aside');
 
-const initFilterBtn = () => {
-	filterBtn.addEventListener('click', function () {
-		filterBtn.classList.toggle('filter-btn-active--active');
-		filterBlock.classList.toggle('shop__filter--active');
-	})
-}
 
-if (filterBtn) {
-	initFilterBtn()
-}
+filterBtn.addEventListener('click', () => {
+	filterBtn.classList.toggle('active');
+	filterSection.classList.toggle('active');
+	document.querySelector('body').classList.toggle('no-scroll');
+})
