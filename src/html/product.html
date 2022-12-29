@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	@@include('./base/head.html', {
+	"title": 'Glee Market | Product'
+	})
+</head>
+
+<body>
+	<div class="wrapper">
+		@@include('./modules/_header.html')
+		<main class="main">
+			@@include('./modules/_cover.html', {
+			"title": 'Product',
+			"page-link": 'Product',
+			})
+			@@include('./modules/_product.html')
+			@@include('./modules/_tabs.html')
+			@@include('./modules/_related-slider.html')
+			@@include('./modules/_blog-post.html')
+			@@include('./modules/_clients.html')
+		</main>
+		@@include('./modules/_footer.html')
+	</div>
+	@@include('./base/scripts.html')
+</body>
+
+</html>

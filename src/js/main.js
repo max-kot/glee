@@ -4,6 +4,11 @@ window.jQuery = $;
 // Slick slider
 import './modules/_slick.js';
 
+// Styler
+import './modules/_form-styler.js';
+// Swiper slider
+//import './modules/_swiper.js';
+
 // Burger-menu
 import './modules/_burger-menu.js';
 
@@ -31,8 +36,7 @@ import './modules/_shop-views.js';
 // Shop filter
 import './modules/_filter-btn.js';
 
-// Styler
-//import './modules/_form-styler.js';
+
 
 
 
