@@ -18,4 +18,12 @@ $(".product-block__product-rating").rateYo({
 	ratedFill: "#ffcc00",
 	readOnly: true,
 });
+$(".product-info__rating").rateYo({
+	//rating: 4,
+	starWidth: '18px',
+	spacing: "10px",
+	normalFill: "#d6d6d6",
+	ratedFill: "#ffcc00",
+	readOnly: true,
+});
 

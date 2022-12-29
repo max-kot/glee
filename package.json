@@ -42,7 +42,7 @@
 		"rateyo": "^2.3.2",
 		"sass": "^1.55.0",
 		"slick-carousel": "^1.8.1",
-		"swiper": "^8.4.4",
+		"swiper": "^8.4.5",
 		"webpack": "^5.74.0",
 		"webpack-stream": "^7.0.0"
 	}
