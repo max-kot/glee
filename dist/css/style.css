@@ -276,6 +276,7 @@ body {
     left: 0;
     width: 100%;
     z-index: 55;
+    border-bottom: 1px solid rgba(163, 187, 200, 0.5);
   }
 }
 .header__body {
@@ -435,6 +436,7 @@ body {
     background: #fff;
     padding: 10px 15px;
     justify-content: space-between;
+    border-top: 1px solid rgba(163, 187, 200, 0.5);
   }
 }
 .navbar__search-btn {
@@ -2977,6 +2979,60 @@ body {
 .tabs__content.active {
   display: block;
 }
+
+.related-slider__title {
+  color: #243f4d;
+  text-align: left;
+  line-height: 1;
+}
+.related-slider__title:not(:last-child) {
+  margin-bottom: 40px;
+}
+.related-slider__slider {
+  margin: 0 -15px;
+}
+.related-slider__slider .slick-prev,
+.related-slider__slider .slick-next {
+  position: absolute;
+  top: -80px;
+  border-radius: 5px;
+  border: solid 2px rgba(163, 187, 200, 0.2);
+  width: 51px;
+  height: 51px;
+  font-size: 0;
+  line-height: 0;
+  transition: all 0.3s;
+}
+@media (max-width: 768px) {
+  .related-slider__slider .slick-prev,
+  .related-slider__slider .slick-next {
+    top: -30px;
+  }
+}
+.related-slider__slider .slick-prev:hover,
+.related-slider__slider .slick-next:hover {
+  border: solid 2px rgb(163, 187, 200);
+}
+.related-slider__slider .slick-prev {
+  right: 85px;
+  background: url("../img/icons/prev.svg") center/22px 9px no-repeat #fff;
+}
+@media (max-width: 768px) {
+  .related-slider__slider .slick-prev {
+    right: unset;
+    left: 15px;
+  }
+}
+.related-slider__slider .slick-next {
+  right: 15px;
+  background: url("../img/icons/next.svg") center/22px 9px no-repeat #fff;
+}
+.related-slider__slide {
+  padding: 30px 15px;
+}
+.related-slider__slide .product-block__product-wrapper {
+  box-shadow: 0px 0px 15px 3px rgba(37, 37, 37, 0.05);
+}
 @supports (-webkit-appearance:none){
 .blog-post__link::after{background:url("../img/icons/angle-right.svg") center/cover no-repeat}
 .blog-post__link:hover::after{background:url("../img/icons/angle-right--hover.svg") center/cover no-repeat}
@@ -2984,6 +3040,8 @@ body {
 .blog-post__item-author::before{background:url("../img/icons/user.svg") center/cover no-repeat}
 .login-form__checkbox:checked ~ .login-form__label-icon{background:#ebebeb url("../img/icons/check.webp") center/10px 8px no-repeat}
 .aside-category__label-text::after{background:url("../img/icons/angle-right--blue.svg") center/cover no-repeat}
+.related-slider__slider .slick-prev{background:url("../img/icons/prev.svg") center/22px 9px no-repeat #fff}
+.related-slider__slider .slick-next{background:url("../img/icons/next.svg") center/22px 9px no-repeat #fff}
 }
 
  @media (max-width: 1024px){
