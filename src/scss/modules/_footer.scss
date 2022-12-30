@@ -25,6 +25,9 @@
 	flex-wrap: wrap;
 	& > *:not(:last-child) {
 		padding-right: 15px;
+		@media (max-width: 550px) {
+			padding-right: unset;
+		}
 	}
 	&__info {
 		flex: 1 1 30%;

@@ -9,6 +9,8 @@ import './modules/_form-styler.js';
 // Swiper slider
 //import './modules/_swiper.js';
 
+// Tabs
+import './modules/_tabs.js';
 // Burger-menu
 import './modules/_burger-menu.js';
 
@@ -57,4 +59,3 @@ import './modules/_filter-btn.js';
 // filters btn
 //import './modules/_filter-btn.js';
 
-//import './modules/_tabs.js';
