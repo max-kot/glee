@@ -24,21 +24,91 @@
 					sit
 					amet.
 				</p>
-				<p class="tabs__content" id="tab-3">
-					Tab-3
-					consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-					ad
-					minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor
-					sit
-					amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-					enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat.consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-					aliqua.
-					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem
-					ipsum
-					dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-					aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat.
+				<div class="tabs__content tabs__comments comments" id="tab-3">
+					<ul class="comments__list list-reset">
+						<li class="comments__item">
+							<div class="comments__body">
+								<div class="comments__image">
+									<img src="./img/blog/user-2.jpg" alt="User">
+								</div>
+								<div class="comments__content">
+									<div class="comments__top">
+										<h5 class="comments__name">
+											Delores G. Roberts
+										</h5>
+										<p class="comments__data">
+											Add <span class="comments__date">11 Oct 2020</span>
+										</p>
+									</div>
+									<p class="comments__text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla massa et
+										tristique
+										convallis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+										inceptos
+										himenaeos. Suspendisse orci sem, ultrices
+									</p>
+									<a class="comments__reply" href="#">
+										<span>Reply</span>
+										<svg xmlns="http://www.w3.org/2000/svg" width="22" height="9" viewBox="0 0 22 9">
+											<path fill="#526278"
+												d="M535.3,654.472h16.948l-0.1,2.857a0.292,0.292,0,0,0,0,.41l0.172,0.172a0.28,0.28,0,0,0,.2.086,0.285,0.285,0,0,0,.2-0.084l4.193-4.211A0.292,0.292,0,0,0,557,653.5a0.283,0.283,0,0,0-.084-0.2l-4.193-4.213a0.289,0.289,0,0,0-.407,0l-0.172.173a0.287,0.287,0,0,0-.084.2,0.278,0.278,0,0,0,.084.2l0.113,2.865H535.292a0.3,0.3,0,0,0-.292.295v1.37A0.292,0.292,0,0,0,535.3,654.472Z"
+												transform="translate(-535 -649)" />
+										</svg>
+									</a>
+								</div>
+							</div>
+							<ul class="comments__reply-list list-reset">
+							</ul>
+						</li>
+						<li class="comments__item">
+							<div class="comments__body">
+								<div class="comments__image">
+									<img src="./img/blog/user-3.jpg" alt="User">
+								</div>
+								<div class="comments__content">
+									<div class="comments__top">
+										<h5 class="comments__name">
+											Delores G. Roberts
+										</h5>
+										<p class="comments__data">
+											Add <span class="comments__date">11 Oct 2020</span>
+										</p>
+									</div>
+									<p class="comments__text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla massa et
+										tristique
+										convallis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+										inceptos
+										himenaeos. Suspendisse orci sem, ultrices
+									</p>
+									<a class="comments__reply" href="#">
+										<span>Reply</span>
+										<svg xmlns="http://www.w3.org/2000/svg" width="22" height="9" viewBox="0 0 22 9">
+											<path fill="#526278"
+												d="M535.3,654.472h16.948l-0.1,2.857a0.292,0.292,0,0,0,0,.41l0.172,0.172a0.28,0.28,0,0,0,.2.086,0.285,0.285,0,0,0,.2-0.084l4.193-4.211A0.292,0.292,0,0,0,557,653.5a0.283,0.283,0,0,0-.084-0.2l-4.193-4.213a0.289,0.289,0,0,0-.407,0l-0.172.173a0.287,0.287,0,0,0-.084.2,0.278,0.278,0,0,0,.084.2l0.113,2.865H535.292a0.3,0.3,0,0,0-.292.295v1.37A0.292,0.292,0,0,0,535.3,654.472Z"
+												transform="translate(-535 -649)" />
+										</svg>
+									</a>
+								</div>
+							</div>
+							<ul class="comments__reply-list list-reset">
+							</ul>
+						</li>
+					</ul>
+					<h2 class="article__title">
+						Leave A Comment
+					</h2>
+					<form class="comments__form comments-form" action="#">
+
+						<input class="comments-form__input comments-form__input--name" type="text" placeholder="Name"
+							required>
+						<input class="comments-form__input comments-form__input--mail" type="email" placeholder="Email"
+							required>
+						<textarea class="comments-form__input comments-form__input--textarea"
+							placeholder="Comment"></textarea>
+						<button class="comments-form__btn btn" type="submit">Post Comment</button>
+					</form>
+				</div>
 				</p>
 			</div>
 		</div>
