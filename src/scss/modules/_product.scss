@@ -164,13 +164,32 @@
 	&__form {
 		display: flex;
 		flex-wrap: wrap;
+
+		@media (max-width: 768px) {
+			position: fixed;
+			z-index: 11;
+			bottom: 72px;
+			left: 0;
+			width: 100%;
+			justify-content: center;
+			background: #fff;
+			& > * {
+				flex: 0 1 50%;
+			}
+		}
+
 		&:not(:last-child) {
 			margin-bottom: 30px;
+			@media (max-width: 768px) {
+				margin-bottom: unset;
+			}
 		}
 
 		& > *:not(:last-child) {
 			margin-right: 15px;
-			margin-bottom: 5px;
+			@media (max-width: 768px) {
+				margin-right: unset;
+			}
 		}
 	}
 
@@ -249,6 +268,10 @@
 		letter-spacing: 1.13px;
 		line-height: 1;
 		padding: 16px;
+		@media (max-width: 768px) {
+			border-radius: unset;
+			min-width: unset;
+		}
 	}
 
 	&__info-list {

@@ -42,7 +42,7 @@
 		}
 		&:not(:last-child) {
 			margin-right: 15px;
-			margin-bottom: 5px;
+
 			@media (max-width: 768px) {
 				margin-bottom: unset;
 			}
@@ -63,6 +63,16 @@
 
 		&.active {
 			display: block;
+		}
+	}
+
+	&__comments {
+		.comments {
+			&__item {
+				padding-bottom: 30px;
+				border-bottom: 2px solid #e0e0e0;
+				margin-bottom: 30px;
+			}
 		}
 	}
 }
