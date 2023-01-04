@@ -1,0 +1,173 @@
+.team {
+	padding-top: 100px;
+	@media (max-width: 768px) {
+		padding-top: 50px;
+	}
+	&__body {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__info {
+		flex: 1 1 35%;
+		padding-right: 100px;
+		@media (max-width: 1024px) {
+			flex-basis: 100%;
+			padding-right: 0;
+			&:not(:last-child) {
+				margin-bottom: 30px;
+			}
+		}
+	}
+
+	&__title {
+		font-family: "DMSans", sans-serif;
+		font-size: rem(36);
+		font-weight: 700;
+		line-height: 1;
+		color: $title-color;
+		&:not(:last-child) {
+			margin-bottom: 30px;
+			@media (max-width: 768px) {
+				margin-bottom: 15px;
+			}
+		}
+	}
+
+	&__text {
+		&:not(:last-child) {
+			margin-bottom: 40px;
+			@media (max-width: 768px) {
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	&__link {
+		line-height: 1;
+		padding: 18px;
+		font-family: "Poppins", sans-serif;
+		font-weight: 600;
+		font-size: rem(15);
+		border-radius: 5px;
+		& > *:not(:last-child) {
+			margin-right: 18px;
+		}
+		&:hover {
+			svg path {
+				fill: currentColor;
+			}
+		}
+	}
+
+	&__list {
+		flex: 1 1 65%;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 30px;
+		@media (max-width: 1024px) {
+			gap: 15px;
+		}
+		@media (max-width: 550px) {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	&__item {
+	}
+
+	&__wrapper {
+	}
+
+	&__image {
+		position: relative;
+		width: 100%;
+		padding-bottom: 100%;
+		overflow: hidden;
+		&:hover {
+			img,
+			source {
+				transform: scale(1.1);
+			}
+		}
+		img,
+		source {
+			position: absolute;
+			transition: all 0.3s;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__content {
+		position: relative;
+		width: 90%;
+		z-index: 2;
+		margin-top: -50px;
+		background: #fff;
+		box-shadow: 0px 6px 57px 0 rgba(37, 37, 37, 0.05);
+		padding: 25px;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		& > *:not(:last-child) {
+			margin-right: 10px;
+			margin-bottom: 5px;
+		}
+	}
+
+	&__descr {
+	}
+
+	&__name {
+		font-family: "DMSans", sans-serif;
+		font-size: rem(22);
+		font-weight: 700;
+		line-height: 1;
+		color: #436372;
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+
+	&__proff {
+		line-height: 1;
+		color: #565872;
+	}
+
+	&__social {
+	}
+}
+.team-social {
+	display: flex;
+	align-items: center;
+	&__item {
+		&:not(:last-child) {
+			margin-right: 5px;
+		}
+	}
+
+	&__link {
+		width: 41px;
+		height: 41px;
+		border-radius: 50%;
+		background-color: #f6f6f6;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		svg path {
+			transition: all 0.3s;
+		}
+
+		&:hover {
+			svg path {
+				fill: $hover-color;
+			}
+		}
+	}
+}
