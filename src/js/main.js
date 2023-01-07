@@ -6,8 +6,6 @@ import './modules/_slick.js';
 
 // Styler
 import './modules/_form-styler.js';
-// Swiper slider
-//import './modules/_swiper.js';
 
 // Tabs
 import './modules/_tabs.js';
