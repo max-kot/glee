@@ -283,11 +283,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   position: relative;
 }
 .header__logo:not(:last-child) {
-  margin-right: 15px;
+  padding-right: 60px;
 }
 .header__menu:not(:last-child) {
   margin-right: 15px;
@@ -424,7 +423,6 @@ body {
 
 .navbar {
   display: flex;
-  flex-wrap: wrap;
 }
 @media (max-width: 1024px) {
   .navbar {
@@ -466,7 +464,6 @@ body {
 }
 .navbar__btn-box {
   display: flex;
-  flex-wrap: wrap;
   border-radius: 25px;
   background: #fcd7b6;
   padding: 15px 40px 10px;
